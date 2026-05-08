@@ -4,28 +4,78 @@
  */
 
 import { BookOpen, ShieldCheck, Clock, AlertTriangle, Users, Star } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export default function App() {
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  };
+
   return (
     <div className="bg-[#0a1128] text-gray-100 min-h-screen font-sans">
       {/* Hero Section */}
-      <header className="py-20 px-6 text-center max-w-4xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-6xl text-[#c5a059] mb-6 tracking-tight">
-          El tiempo se está agotando: cómo rescatar la conexión con tus hijos antes de que el silencio se convierta en un abismo.
-        </h1>
-        <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light">
-          ¿Sientes que están en la mesa, pero con la mente lejos? Este no es solo un libro, es tu manual de protección familiar.
-        </p>
-        <a 
-          href="https://pay.kiwify.com/ehJAn2c" 
-          className="inline-block bg-[#c5a059] text-[#0a1128] font-bold text-lg px-8 py-4 rounded-md shadow-lg transition-transform hover:scale-105"
-        >
-          Rescatar la conexión ahora (solo $12)
-        </a>
-      </header>
+      <motion.header 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="relative py-20 px-6 text-center"
+      >
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <motion.img 
+            src="/fortaleza_familiar.png" 
+            alt="Fortaleza Familiar" 
+            className="rounded-lg shadow-2xl border border-[#c5a059]/30"
+            animate={{ y: [0, -20, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <div>
+            <h1 className="font-serif text-5xl md:text-6xl text-[#c5a059] mb-6 tracking-tight text-left">
+              El tiempo se está agotando: cómo rescatar la conexión con tus hijos antes de que el silencio se convierta en un abismo.
+            </h1>
+            <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light text-left">
+              ¿Sientes que están en la mesa, pero con la mente lejos? Este no es solo un libro, es tu manual de protección familiar.
+            </p>
+            <div className="text-left">
+              <a 
+                href="https://pay.kiwify.com/ehJAn2c" 
+                className="inline-block bg-[#c5a059] text-[#0a1128] font-bold text-lg px-8 py-4 rounded-md shadow-lg transition-transform hover:scale-105"
+              >
+                Rescatar la conexión ahora (solo $12)
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.header>
+
+      {/* Video Section Placeholder */}
+      <motion.section 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true, amount: 0.2 }} 
+        variants={sectionVariants}
+        className="py-12 px-6 flex justify-center"
+      >
+        <div className="w-full max-w-4xl aspect-video bg-black rounded-lg border border-[#c5a059]/30 shadow-2xl flex items-center justify-center">
+          <iframe 
+            className="w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/y1gGTo7_OYA" 
+            title="Video de presentación"
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowFullScreen
+          ></iframe>
+        </div>
+      </motion.section>
 
       {/* Pain Points */}
-      <section className="py-20 px-6 bg-[#111827] border-y border-gray-800">
+      <motion.section 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true, amount: 0.2 }} 
+        variants={sectionVariants}
+        className="py-20 px-6 bg-[#111827] border-y border-gray-800"
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">¿Sientes que...</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -41,10 +91,16 @@ export default function App() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Chapters (Solution) */}
-      <section className="py-20 px-6 max-w-4xl mx-auto">
+      <motion.section 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true, amount: 0.2 }} 
+        variants={sectionVariants}
+        className="py-20 px-6 max-w-4xl mx-auto"
+      >
         <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Tu Plan de Escape</h2>
         <div className="space-y-6">
           {[
@@ -63,10 +119,24 @@ export default function App() {
             </div>
           ))}
         </div>
-      </section>
+        <div className="text-center mt-12">
+          <a 
+            href="https://pay.kiwify.com/ehJAn2c" 
+            className="inline-block bg-[#c5a059] text-[#0a1128] font-bold text-lg px-8 py-4 rounded-md shadow-lg transition-transform hover:scale-105"
+          >
+            Quiero empezar a proteger mi familia ahora
+          </a>
+        </div>
+      </motion.section>
 
       {/* Testimonials */}
-      <section className="py-20 px-6 bg-[#111827]">
+      <motion.section 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true, amount: 0.2 }} 
+        variants={sectionVariants}
+        className="py-20 px-6 bg-[#111827]"
+      >
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Testimonios de Familias Restauradas</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -98,10 +168,17 @@ export default function App() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Offer & Guarantee */}
-      <section id="oferta" className="py-20 px-6 bg-[#c5a059] text-[#0a1128] text-center">
+      <motion.section 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true, amount: 0.2 }} 
+        variants={sectionVariants}
+        id="oferta" 
+        className="py-20 px-6 bg-[#c5a059] text-[#0a1128] text-center"
+      >
         <div className="max-w-2xl mx-auto">
           <ShieldCheck className="w-16 h-16 mx-auto mb-6" />
           <h2 className="font-serif text-4xl mb-6">Protege tu mayor patrimonio.</h2>
@@ -111,7 +188,7 @@ export default function App() {
           </a>
           <p className="mt-6 text-sm font-semibold italic">Garantía Incondicional de 7 días - Riesgo Cero.</p>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
