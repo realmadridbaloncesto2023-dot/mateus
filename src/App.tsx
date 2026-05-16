@@ -31,17 +31,17 @@ export default function App() {
           />
           <div>
             <h1 className="font-serif text-5xl md:text-6xl text-[#c5a059] mb-6 tracking-tight text-left">
-              El tiempo se está agotando: cómo rescatar la conexión con tus hijos antes de que el silencio se convierta en un abismo.
+              O tempo está acabando: como resgatar a conexão com seus filhos antes que o silêncio se torne um abismo.
             </h1>
             <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light text-left">
-              ¿Sientes que están en la mesa, pero con la mente lejos? Este no es solo un libro, es tu manual de protección familiar.
+              Você sente que eles estão à mesa, mas com a mente longe? Este não é apenas um livro, é o seu manual de proteção familiar.
             </p>
             <div className="text-left">
               <a 
                 href="https://pay.kiwify.com/ehJAn2c" 
                 className="inline-block bg-[#c5a059] text-[#0a1128] font-bold text-lg px-8 py-4 rounded-md shadow-lg transition-transform hover:scale-105"
               >
-                Rescatar la conexión ahora (solo $12)
+                Resgatar a conexão agora (apenas R$ 39,90)
               </a>
             </div>
           </div>
@@ -77,12 +77,12 @@ export default function App() {
         className="py-20 px-6 bg-[#111827] border-y border-gray-800"
       >
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">¿Sientes que...</h2>
+          <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Você sente que...</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              "¿Tu voz ha perdido autoridad ante los algoritmos y las redes sociales?",
-              "¿La distancia entre tú y tu hijo aumenta cada día?",
-              "¿Estás perdiendo la influencia que Dios te confió?",
+              "Sua voz perdeu a autoridade diante dos algoritmos e das redes sociais?",
+              "A distância entre você e seu filho aumenta a cada dia?",
+              "Você está perdendo a influência que Deus lhe confiou?",
             ].map((point, index) => (
               <div key={index} className="flex items-start gap-4 p-6 bg-[#0a1128] rounded-lg border border-[#c5a059]/20">
                 <AlertTriangle className="text-[#c5a059] w-8 h-8 flex-shrink-0" />
@@ -101,14 +101,14 @@ export default function App() {
         variants={sectionVariants}
         className="py-20 px-6 max-w-4xl mx-auto"
       >
-        <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Tu Plan de Escape</h2>
+        <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Seu Plano de Escape</h2>
         <div className="space-y-6">
           {[
-            { title: "La Tienda que se Mueve Sola", desc: "Comprendiendo la búsqueda de identidad fuera de casa." },
-            { title: "El Viento que Sopla Afuera", desc: "Protegiendo a tu familia contra ideologías devastadoras." },
-            { title: "La Roca en Medio del Diluvio", desc: "Cómo establecer autoridad bíblica sin usar la fuerza." },
-            { title: "El Altar en Medio del Caos", desc: "Transformando tu hogar en un santuario de oración." },
-            { title: "El Camino de Regreso a Casa", desc: "Pasos prácticos para la reconexión diaria." },
+            { title: "A Barraca que se Move Sozinha", desc: "Compreendendo a busca de identidade fora de casa." },
+            { title: "O Vento que Sopra lá Fora", desc: "Protegendo sua família contra ideologias devastadoras." },
+            { title: "A Rocha no Meio do Dilúvio", desc: "Como estabelecer autoridade bíblica sem usar a força." },
+            { title: "O Altar no Meio do Caos", desc: "Transformando seu lar em um santuário de oração." },
+            { title: "O Caminho de Volta para Casa", desc: "Passos práticos para a reconexão diária." },
           ].map((chapter, index) => (
             <div key={index} className="flex gap-4 items-center border-b border-gray-700 pb-4">
               <span className="font-serif text-4xl text-[#c5a059]/50">0{index + 1}</span>
@@ -124,7 +124,7 @@ export default function App() {
             href="https://pay.kiwify.com/ehJAn2c" 
             className="inline-block bg-[#c5a059] text-[#0a1128] font-bold text-lg px-8 py-4 rounded-md shadow-lg transition-transform hover:scale-105"
           >
-            Quiero empezar a proteger mi familia ahora
+            Quero começar a proteger minha família agora
           </a>
         </div>
       </motion.section>
@@ -138,20 +138,20 @@ export default function App() {
         className="py-20 px-6 bg-[#111827]"
       >
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Testimonios de Familias Restauradas</h2>
+          <h2 className="font-serif text-3xl text-[#c5a059] mb-12 text-center">Depoimentos de Famílias Restauradas</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                text: "Estábamos perdiendo a nuestros hijos ante el mundo digital. Este libro nos dio las herramientas prácticas que necesitábamos para recuperar nuestra autoridad bíblica.",
-                name: "Familia Rodríguez",
+                text: "Estávamos perdendo nossos filhos para o mundo digital. Este livro nos deu as ferramentas práticas que precisávamos para recuperar nossa autoridade bíblica.",
+                name: "Família Rodríguez",
               },
               {
-                text: "El 'desafío para el hogar' cambió nuestra dinámica. Pasamos de ser extraños en la misma mesa a orar juntos todas las noches.",
+                text: "O 'desafio para o lar' mudou nossa dinâmica. Passamos de ser estranhos na mesma mesa a orar juntos todas as noites.",
                 name: "Elena M.",
               },
               {
-                text: "Una lectura imprescindible. No es solo teoría, es un manual de aplicación inmediata para proteger a nuestros hijos de las ideologías modernas.",
-                name: "Carlos y Ana G.",
+                text: "Uma leitura imprescindível. Não é apenas teoria, é um manual de aplicação imediata para proteger nossos filhos das ideologias modernas.",
+                name: "Carlos e Ana G.",
               },
             ].map((test, index) => (
               <div key={index} className="bg-[#0a1128] border border-[#c5a059]/20 p-6 rounded-lg text-center">
@@ -181,12 +181,12 @@ export default function App() {
       >
         <div className="max-w-2xl mx-auto">
           <ShieldCheck className="w-16 h-16 mx-auto mb-6" />
-          <h2 className="font-serif text-4xl mb-6">Protege tu mayor patrimonio.</h2>
-          <p className="text-lg mb-8 font-medium">Este es un proyecto misionero. Por solo $12, adquieres la herramienta esencial para proteger el futuro de tus hijos. El valor es simbólico, pero el contenido vale oro.</p>
+          <h2 className="font-serif text-4xl mb-6">Proteja seu maior patrimônio.</h2>
+          <p className="text-lg mb-8 font-medium">Este é um projeto missionário. Por apenas R$ 39,90, você adquire a ferramenta essencial para proteger o futuro dos seus filhos. O valor é simbólico, mas o conteúdo vale ouro.</p>
           <a href="https://pay.kiwify.com/ehJAn2c" className="inline-block bg-[#0a1128] text-[#c5a059] font-bold text-xl px-10 py-5 rounded-md shadow-2xl transition-transform hover:scale-105">
-            Garantizar Manual de Protección (Solo $12)
+            Garantir Manual de Proteção (Apenas R$ 39,90)
           </a>
-          <p className="mt-6 text-sm font-semibold italic">Garantía Incondicional de 7 días - Riesgo Cero.</p>
+          <p className="mt-6 text-sm font-semibold italic">Garantia Incondicional de 7 dias - Risco Zero.</p>
         </div>
       </motion.section>
     </div>
