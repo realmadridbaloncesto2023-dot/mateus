@@ -59,7 +59,7 @@ export default function App() {
         <div className="w-full max-w-4xl aspect-video bg-black rounded-lg border border-[#c5a059]/30 shadow-2xl flex items-center justify-center">
           <iframe 
             className="w-full h-full rounded-lg"
-            src="https://www.youtube.com/embed/y1gGTo7_OYA" 
+            src="https://www.youtube.com/embed/xCvgnu5vKFA" 
             title="Video de presentación"
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
